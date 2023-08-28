@@ -52,17 +52,26 @@ nav {
 
 ul {
     width: 100%;
+    padding-left: 50px;
 }
 
 li {
     border: 5px;
     list-style: none;
+    padding: 10px;
+}
+
+li:hover {
+    background-color: #282828;
+    border-radius: 10px;
 }
 
 a {
-    color: #e2e2e2;
+    color: #CECFD0;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    display: block;
+    font-size: 16px;
 }
 
 a:hover {
