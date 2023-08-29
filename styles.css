@@ -25,29 +25,10 @@ header {
     margin: 10px 25px;
 }
 
-main, div {
-    height: 100%;
-}
-
 main {
     display: grid;
     grid-template-columns: 1fr 4fr;
-}
-
-.grid-child {
-    margin: 0 0 25px 25px;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
-    width: 100%;
-    border-radius: 25px;
-    border: 12px;
-    background-color: #0E1111;
-    padding: 10px 20px;
 }
 
 ul {
@@ -61,23 +42,73 @@ li {
     padding: 10px;
 }
 
-li:hover {
-    background-color: #282828;
-    border-radius: 10px;
-}
-
 a {
-    color: #CECFD0;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    display: block;
+  
     font-size: 16px;
-}
-
-a:hover {
-    color: #fff;
 }
 
 img {
     width: 100%;
 }
+
+.side-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    border: 12px;
+    background-color: #0E1111;
+    padding: 10px 20px;
+}
+
+.top-nav ul {
+    display: flex;
+}
+
+.top-nav li {
+    flex: 1;
+}
+
+.top-nav a {
+    color: #0E1111;
+    display: inline;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-bottom: 16px;
+}
+
+.top-nav a:hover {
+    border-bottom: 2px solid #0E1111;
+}
+
+.grid-child:first-child {
+    margin: 0 0 25px 25px;
+}
+
+.grid-child:last-child {
+    margin: 0 25px 25px 25px;
+}
+
+.side-nav li:hover {
+    background-color: #282828;
+    border-radius: 10px;
+}
+
+.side-nav a {
+    color: #CECFD0;
+
+}
+
+.side-nav a:hover {
+    color: #fff;
+}
+
+.side-nav a {
+    display: block;
+}
+
