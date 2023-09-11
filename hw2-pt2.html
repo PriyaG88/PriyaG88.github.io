@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Homework 2 for JavaScript, jQuery, AJAX course at CCSF">
-    <link rel="stylesheet" type="text/css" href="styles.css"> 
-    <title>Homework 2</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="scripts/hw2-pt2.js"></script>
+    <title>CNIT 133 Homework 2 - Basic Operations: Part 2</title>
 </head>
-<body class="hw2">
+<body class="hw2-pt2">
     <header>
-        <h1>CNIT 133 Homework 2 - Basic Operations</h1>
+        <h1>CNIT 133 Homework 2 - Basic Operations: Part 2</h1>
     </header>
     <main class="grid-container">
         <div class="grid-child">
@@ -37,13 +39,21 @@
                 </nav>
             </div>
             <div class="grid-child main-content">
-                <h3>Part 1 Description</h3>
-                <p>
-                    Create a webpage that contains a script using document.write() to display text
-                </p>
-                <h3>Part 2 Description</h3>
-                <p>
-                    Create a webpage that contains a form with three input fields. The form will also contain three buttons: caclulate, clear and fade. An output section should provide error output or the result if valid inputs were provided.
+                <div class="form_result_wrapper">
+                    <form name="number_form">
+                        <label for="first_num"></label><br>
+                        <input type="text" id="first_num" placeholder="Please enter a number"><br>
+                        <label for="second_num"></label><br>
+                        <input type="text" id="second_num" placeholder="Please enter a number"><br>
+                        <label for="third_num"></label><br>
+                        <input type="text" id="third_num" placeholder="Please enter a number"><br>
+                        <input type="button" id="calculate_button" onclick="calculate()" value="Calculate">
+                        <input type="button" onclick="clearForm()" value="Clear"><br>
+                        <input type="button" id="fade_button" value="Fade Results">
+                    </form>
+                    <div id="results">
+                    </div>
+                </div>
             </div>
         </div>
     </main>
